@@ -1,0 +1,72 @@
+
+html,body,ul,li,div,h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    background:#323232;
+    font-size:14px;
+    font-family:Microsoft YaHei;
+}
+
+ul{
+    list-style-type:none;
+}
+
+.tab-container{
+    width:300px;
+    height:200px;
+    padding:100px;
+}
+
+ul.tab-nav li{
+    float:left;
+    width:50px;
+    height:30px;
+    margin-right:5px;
+    background:#767676;
+    color:#ffffff;
+    text-align:center;
+    line-height:30px;
+    border-radius:3px 3px 0px 0px;
+    cursor:pointer;
+}
+/*列表切换*/
+ul.tab-nav li.active{
+    color:#777777;
+    background:#ffffff;
+}
+/*清除浮动*/
+.clearFix:after{
+    content:'*';
+    width:0;
+    height:0;
+    display:block;
+    clear:both;
+    visibility:hidden;
+}
+.con-wrap{
+    width:300px;
+    background:#ffffff;
+    height:200px;
+    position:relative;
+}
+.con-wrap .conItems{
+    width:100%;
+    height:200px;
+    padding:3px;
+    box-sizing:border-box;
+    display:none;
+    position:absolute;
+}
+
+.con-wrap .conItems img{
+    width:100%;
+    height:100%;
+}
+.con-wrap .currentItems{
+    display:block;
+}

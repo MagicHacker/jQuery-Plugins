@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TabPlugin</title>
+    <link rel="stylesheet" href="../css/tabStyle.css">
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/tabPlugin.js"></script>
+</head>
+<body>
+    <div class="tab-container">
+        <ul class="tab-nav clearFix">
+            <li class="active"><span>电影</span></li>
+            <li><span>科技</span></li>
+            <li><span>娱乐</span></li>
+            <li><span>教育</span></li>
+        </ul>
+        <div class="con-wrap">
+            <div class="conItems currentItems">
+                <img src="../../images/logo_1.jpg" alt="暂时无法正常显示">
+            </div>
+            <div class="conItems">
+                <img src="../../images/logo_2.jpg" alt="暂时无法正常显示">
+            </div>
+            <div class="conItems">
+                <img src="../../images/logo_3.jpg" alt="暂时无法正常显示">
+            </div>
+            <div class="conItems">
+                <img src="../../images/logo_4.jpg" alt="暂时无法正常显示">
+            </div>
+        </div>s
+    </div>
+    <script>
+
+        $(function(){
+            $('.tab-container').tab({
+                type:'click',//触发模式
+                switchMode:'fade',//切换模式
+                defaultItem:2, //默认显示项
+                autoPlay:3000//自动播放
+            });
+        });
+    </script>
+</body>
+</html>

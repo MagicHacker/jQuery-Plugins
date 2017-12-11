@@ -1,0 +1,68 @@
+/*CSS Reset*/
+html,body,ul,li,div,h1,h2,h3,h4,h5{
+    margin:0;
+    padding:0;
+    font-family:Microsoft YaHei;
+}
+
+.tooltip-container{
+    width:200px;
+    height:64px;
+    background: #0DB8AC;
+    border-radius:10px;
+    position:absolute;
+    top:40px;
+    right:20px;
+}
+
+.tooltip-image{
+    width:50px;
+    height:100%;
+    position:relative;
+}
+
+.tooltip-circle{
+    background:#fff;
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-16px 0px 0px -16px;
+}
+
+.tooltip-circle img{
+    width:100%;
+    height:100%;
+}
+
+.tooltip-text{
+    width:150px;
+    height:100%;
+    font-size:18px;
+    position:absolute;
+    top:0px;
+    left:50px;
+    color:#fff;
+    line-height:64px;
+    text-align:center;
+}
+
+.tooltip-timeout{
+    width:100%;
+    height:3px;
+    background:rgba(0,0,0,0.5);
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+.tooltip-close{
+    color:#ffffff;
+    font-size:23px;
+    position:absolute;
+    top:0px;
+    right:5px;
+    cursor:pointer;
+}

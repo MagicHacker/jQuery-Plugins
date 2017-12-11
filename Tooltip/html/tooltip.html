@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tooltip Plugin</title>
+    <link rel="stylesheet" href="../css/tooltip.css">
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/tooltip.js"></script>
+</head>
+<body>
+    <div class="tooltip-container">
+        <div class="tooltip-image">
+            <div class="tooltip-circle">
+                <img src="../images/right.png" alt="暂时无法正常显示图片">
+            </div>
+        </div>
+        <div class="tooltip-text">
+            <span id="message">添加成功</span>
+        </div>
+        <div class="tooltip-timeout"></div>
+        <div class="tooltip-close">
+            <span>&times;</span>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $().tooltip({
+                //消息体
+                message:'添加成功',
+                //显示时间
+                timeout:2000,
+                //框的类型
+                type:'success',
+                //可选配置参数
+                option:{
+                    color:'',
+                    imageUrl:''
+                }
+            });
+        })
+    </script>
+</body>
+</html>
